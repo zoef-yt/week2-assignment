@@ -65,51 +65,74 @@ body {
 .flex {
 	display: flex;
 }
+
 .column {
 	display: flex;
 	flex-direction: column;
 }
+
 .flex-wrap {
 	flex-wrap: wrap;
 }
+
 .row {
 	display: flex;
 	flex-direction: row;
 }
+
 .column-row-center {
 	align-items: center;
 	justify-content: center;
 }
+
 .flex-end {
 	justify-content: flex-end;
 }
+
 .flex-start {
 	justify-content: flex-start;
 }
+
 .space-evenly {
 	justify-content: space-evenly;
 }
+
 .space-around {
 	justify-content: space-around;
 }
+
 .space-between {
 	justify-content: space-between;
 }
+
 .margin-left {
 	margin-left: auto;
 }
+
 .margin-right {
 	margin-right: auto;
 }
+
 .margin-top {
 	margin-top: auto;
 }
+
 .margin-bottom {
 	margin-bottom: auto;
 }
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
 section {
 	width: 70rem;
-	height: 40rem;
+	min-height: 5rem;
+	padding: 2rem 0;
 	margin: 0.5rem auto 2rem;
 	display: flex;
 	flex-direction: column;
@@ -118,17 +141,20 @@ section {
 	border-radius: 1rem;
 	background-color: var(--card-color);
 }
+
 .section-title {
 	font-size: 2rem;
 	font-weight: bold;
 	margin: 2rem 0 0 0;
 	color: var(--text-color);
 }
+
 button {
 	border: none;
 	cursor: pointer;
 	border-radius: 0.5rem;
 }
+
 .btn {
 	width: 10rem;
 	height: 3rem;
@@ -141,10 +167,12 @@ button {
 	border: none;
 	cursor: pointer;
 }
+
 .btn:hover {
 	background-color: var(--button-color-hover);
 	color: var(--text-color);
 }
+
 .text-button {
 	margin: 0.5rem 1rem;
 	font-size: 1rem;
@@ -152,11 +180,14 @@ button {
 	font-weight: bold;
 	color: var(--button-color);
 }
+
 .text-button:hover {
 	background-color: transparent;
 	color: var(--button-color-hover);
 }
+
 /* --------------------- CARD -------------------------- */
+
 .card {
 	border-radius: 1rem;
 	background-color: var(--card-color);
@@ -164,21 +195,26 @@ button {
 	margin: 0.4rem;
 	padding: 20px;
 }
+
 .card:hover {
 	box-shadow: 0 0 0.5rem var(--border-color);
 }
+
 .card-sm {
 	width: 20rem;
 	min-height: 3rem;
 }
+
 .card-md {
-	width: 20rem;
+	width: 30rem;
 	min-height: 10rem;
 }
+
 .card-lg {
 	width: 50rem;
 	min-height: 13rem;
 }
+
 .card-img {
 	object-fit: cover;
 	width: 6rem;
@@ -186,29 +222,183 @@ button {
 	height: min-content;
 	border-radius: 0.5rem;
 }
+
 .card-header {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin: 0.5rem 0 0 0;
 }
+
 .card-footer {
 	font-size: 1rem;
 	font-weight: bold;
 	margin: 1rem 0 0 0;
 }
+
 .card-cta-icon {
 	margin: 0 1rem;
 	cursor: pointer;
 }
+
 .card-cta-icon:hover {
 	color: var(--border-color);
 }
+
+li {
+	list-style: none;
+}
+
 /* --------------------- chips-section ------------------------ */
+
+.chip {
+	flex-direction: column;
+	padding: 0.25rem 0.5rem;
+	font-size: 1rem;
+	line-height: 2rem;
+	border-radius: 5rem;
+	background-color: var(--button-color);
+	color: var(--background-color);
+	margin: 0.5rem;
+}
+
+.chip p {
+	display: inline-block;
+}
+
+.chip i {
+	cursor: pointer;
+	line-height: 2rem;
+}
+
+.chip i:hover {
+	color: var(--border-color);
+}
+
 /* --------------------- drawer-section ---------------------  */
+
+.drawer {
+	width: 14rem;
+	background-color: var(--background-color);
+}
+
+.drawer-header {
+	font-size: 1.8rem;
+	padding: 1rem 0 0.2rem 1rem;
+}
+
+.drawer-subtext {
+	font-size: 1.2rem;
+	padding: 0.2rem 0 0.2rem 1rem;
+}
+
+.drawer-items {
+	margin: 0.5rem 0.7rem 0.5rem 0.7rem;
+	padding: 0.5rem 0.2rem 0.5rem 0.3rem;
+	cursor: pointer;
+	border-radius: 0.2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.drawer-items-icon-right {
+	flex-direction: row-reverse;
+}
+
+.drawer-items:hover {
+	background-color: var(--button-color-hover);
+	color: var(--background-color);
+}
+
 /* --------------------- header-section ---------------------  */
+
+.header {
+	width: 90%;
+	min-height: 2rem;
+	background-color: var(--background-color);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 1rem;
+}
+
+.header i {
+	cursor: pointer;
+	font-size: 1.5rem;
+	margin: 0 1rem;
+	color: var(--text-color);
+}
+
+.header i:hover {
+	color: var(--border-color);
+}
+
 /* --------------------- badge-section ---------------------  */
+
+.badge-here {
+	position: relative;
+}
+
+.badge {
+	position: absolute;
+	padding: 0.2rem;
+	top: -1.1rem;
+	right: -1rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 5rem;
+	background-color: var(--button-color);
+	color: var(--background-color);
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.badge-left {
+	left: -1.1rem;
+}
+
 /* --------------------- snackbar-section ---------------------  */
+.snackbar {
+	position: fixed;
+	bottom: 0;
+	margin: 1rem;
+	width: 50%;
+	height: 3rem;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5rem;
+	z-index: 2;
+	box-shadow: 0 0 0.2rem var(--border-color);
+	animation: snackbar-fade-in 0.5s;
+}
+
+@keyframes snackbar-fade-in {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+.snackbar i {
+	cursor: pointer;
+	font-size: 1.5rem;
+	margin: 0 1rem;
+	color: var(--text-color);
+}
+
 /* --------------------- dialogs-section ---------------------  */
+
 .dialog-card {
 	border-radius: 1rem;
 	background-color: var(--card-color);
@@ -232,15 +422,76 @@ button {
 	justify-content: center;
 	z-index: 100;
 }
+
 .dialog-header {
 	font-size: 2rem;
 }
+
 .dialog-body {
 	font-size: 1.5rem;
 }
+
 .dialog-body {
 	margin: 1rem 0;
 	font-size: 1rem;
 	word-wrap: break-word;
 }
+
 /* --------------------- tabs-section  ---------------------  */
+
+.tabbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.5rem 0;
+	background-color: var(--background-color);
+	width: 50rem;
+	min-height: 20rem;
+}
+.tabbar-button {
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.5rem;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	color: var(--text-color);
+	transition: 0.3s;
+}
+.tabbar-button.selected {
+	color: var(--button-color);
+	flex-grow: 1;
+	background-color: var(--card-color);
+}
+
+.tabbar-button:hover {
+	color: var(--button-color);
+}
+.tabbar-top {
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+	justify-content: end;
+	border-bottom: 0.3rem solid var(--card-color);
+}
+
+.tabbar-content-item {
+	width: 100%;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: 0.3s;
+}
+/* scrollbar */
+
+::-webkit-scrollbar {
+	width: 20px;
+	background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-track {
+	background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--card-color);
+}

@@ -35,20 +35,122 @@
 
 		<h1 class="section-title">Chips</h1>
 		<section id="chips-section">
-			<div class="card card-lg"></div>
+			<div class="card card-md">
+				<!-- this div is  just for styling on the website do not copy this -->
+
+				<div class="flex flex-wrap">
+					<div class="chip">
+						<p>HTML</p>
+						<i onClick="this.parentElement.style.display='none'" class="fas fa-times-circle"></i>
+					</div>
+					<div class="chip">
+						<p>CSS</p>
+						<i onClick="this.parentElement.style.display='none'" class="fas fa-times-circle"></i>
+					</div>
+					<div class="chip">
+						<p>JavaScript</p>
+						<i onClick="this.parentElement.style.display='none'" class="fas fa-times-circle"></i>
+					</div>
+					<div class="chip">
+						<p>React</p>
+						<i onClick="this.parentElement.style.display='none'" class="fas fa-times-circle"></i>
+					</div>
+					<div class="chip">
+						<p>Node.js</p>
+						<i onClick="this.parentElement.style.display='none'" class="fas fa-times-circle"></i>
+					</div>
+					<div class="chip">
+						<p>Express</p>
+						<i onClick="this.parentElement.style.display='none'" class="fas fa-times-circle"></i>
+					</div>
+					<div class="chip">
+						<p>MongoDB</p>
+						<i onClick="this.parentElement.style.display='none'" class="fas fa-times-circle"></i>
+					</div>
+					<div class="chip">
+						<p>MySQL</p>
+						<i onClick="this.parentElement.style.display='none'" class="fas fa-times-circle"></i>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<h1 class="section-title">Drawer</h1>
-		<section id="drawer-section"></section>
+		<section id="drawer-section">
+			<div class="drawer">
+				<h1 class="drawer-header">Title</h1>
+				<p class="drawer-subtext">subtext</p>
+				<ul class="flex column">
+					<li class="drawer-items">
+						<i class="far fa-envelope"></i>
+						<p>Inbox</p>
+					</li>
+					<li class="drawer-items">
+						<i class="far fa-star"></i>
+						<p>Star</p>
+					</li>
+					<li class="drawer-items">
+						<i class="fas fa-paper-plane"></i>
+						<p>Sent mail</p>
+					</li>
+					<li class="drawer-items">
+						<i class="far fa-envelope-open"></i>
+						<p>Drafts</p>
+					</li>
+				</ul>
+			</div>
+		</section>
 
 		<h1 class="section-title">Header</h1>
-		<section id="header-section"></section>
+		<section id="header-section">
+			<header class="header">
+				<i class="fas fa-bars"></i>
+				<h1 class="margin-right">Mumbai, Maharashtra</h1>
+				<i class="fas fa-download"></i>
+				<i class="fas fa-print"></i>
+				<i class="fas fa-bookmark"></i>
+			</header>
+			<div class="card card-sm">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+				nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+			</div>
+			<div class="card card-sm">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+				nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+			</div>
+			<div class="card card-sm">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+				nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+			</div>
+			<div class="card card-sm">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+				nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+			</div>
+		</section>
 
 		<h1 class="section-title">Badge</h1>
-		<section id="badge-section"></section>
+		<section id="badge-section">
+			<div class="badge-here">
+				<p>Text with a badge</p>
+				<div class="badge">4</div>
+			</div>
+			<br />
+			<br />
+			<div class="badge-here">
+				<p>Text with a badge</p>
+				<div class="badge badge-left">2</div>
+			</div>
+		</section>
 
 		<h1 class="section-title">Snackbar</h1>
-		<section id="snackbar-section"></section>
+		<section id="snackbar-section">
+			<button class="btn" onclick="showSnackbar()">Open In Dialog</button>
+			<div id="_snackbar" class="" hidden>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi n</p>
+				<button class="text-button">Retry</button>
+				<i onclick="hideSnackBar()" class="fas fa-times"></i>
+			</div>
+		</section>
 
 		<h1 class="section-title">Dialogs</h1>
 		<section id="dialogs-section">
@@ -70,7 +172,46 @@
 		</section>
 
 		<h1 class="section-title">Tabs</h1>
-		<section id="tabs-section "></section>
+		<section id="tabs-section ">
+			<div class="tabbar">
+				<div class="tabbar-top">
+					<li class="tabbar-button selected">Mumbai</li>
+					<li class="tabbar-button">Pune</li>
+					<li class="tabbar-button">Delhi</li>
+					<li class="tabbar-button">Bangalore</li>
+					<li class="tabbar-button">Chennai</li>
+					<!-- <li class="tabbar-button">Mumbais</li>
+					<li class="tabbar-button">Punes</li>
+					<li class="tabbar-button">Delhis</li>
+					<li class="tabbar-button">Bangalores</li>
+					<li class="tabbar-button">Chennais</li> -->
+				</div>
+
+					<div class="tabbar-content-item">
+						<div id="Mumbai"class="card card-sm tabbar-content" >
+							Mumbai.................Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+							nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+						</div>
+						<div id="Pune"class="card card-sm tabbar-content">
+							Pune............ Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+							nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+						</div>
+						<div id="Delhi"class="card card-sm tabbar-content">
+							Delhi........... Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+							nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+						</div>
+						<div id="Bangalore"class="card card-sm tabbar-content">
+							Bangalore............Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+							nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+						</div>
+						<div id="Chennai"class="card card-sm tabbar-content">
+							Chennai............Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui excepturi eveniet ducimus quam error eligendi nobis vitae sapiente
+							nesciunt aspernatur suscipit facilis voluptatibus, laborum accusamus quasi quidem, quae amet!
+						</div>
+
+				<div class="tabbar-indicator"></div>
+			</div>
+		</section>
 		<!-- font Awesome -->
 		<script src="app.js"></script>
 		<script src="https://kit.fontawesome.com/8931fcc5a6.js" crossorigin="anonymous"></script>
