@@ -20,7 +20,6 @@ const tabs = document.querySelectorAll(".tabbar-button");
 const tabContent = document.querySelectorAll(".tabbar-content");
 tabContent.forEach((content) => {
 	content.style.display = "none";
-	console.log(content.id);
 	if (content.id === "Mumbai") {
 		content.style.display = "block";
 	}
@@ -37,7 +36,6 @@ tabs.forEach((tab) => {
 function selectTab(element) {
 	tabContent.forEach((content) => {
 		content.style.display = "none";
-		console.log(content.id);
 		if (content.id === element) {
 			content.style.display = "block";
 		}
