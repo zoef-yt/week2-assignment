@@ -1,0 +1,226 @@
+:root {
+	/* --first-background-color: ;
+	--second-background-color: ; */
+	/* --border-color-one: #028f81;
+	
+	--elevated-color: #1f1f1f; */
+	--button-color: #bb86fc;
+	--button-color-hover: #cd88ea;
+	--background-color: #060a3c;
+	--text-color: #cacad0;
+	--card-color: #080826;
+	--border-color: #ae2426;
+	/* #CACAD0
+	#080826
+	#060a3C
+	#ae2426 */
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 30%;
+	}
+}
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	html {
+		font-size: 75%;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	html {
+		font-size: 100%;
+	}
+}
+
+@media only screen and (min-width: 2000px) {
+	html {
+		font-size: 150%;
+	}
+}
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* ------------------------ ulities ------------------------ */
+.flex {
+	display: flex;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.column-row-center {
+	align-items: center;
+	justify-content: center;
+}
+.flex-end {
+	justify-content: flex-end;
+}
+.flex-start {
+	justify-content: flex-start;
+}
+.space-evenly {
+	justify-content: space-evenly;
+}
+.space-around {
+	justify-content: space-around;
+}
+.space-between {
+	justify-content: space-between;
+}
+.margin-left {
+	margin-left: auto;
+}
+.margin-right {
+	margin-right: auto;
+}
+.margin-top {
+	margin-top: auto;
+}
+.margin-bottom {
+	margin-bottom: auto;
+}
+section {
+	width: 70rem;
+	height: 40rem;
+	margin: 0.5rem auto 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+	background-color: var(--card-color);
+}
+.section-title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 2rem 0 0 0;
+	color: var(--text-color);
+}
+button {
+	border: none;
+	cursor: pointer;
+	border-radius: 0.5rem;
+}
+.btn {
+	width: 10rem;
+	height: 3rem;
+	margin: 2rem;
+	border-radius: 0.5rem;
+	background-color: var(--button-color);
+	color: var(--background-color);
+	font-size: 1rem;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: var(--button-color-hover);
+	color: var(--text-color);
+}
+.text-button {
+	margin: 0.5rem 1rem;
+	font-size: 1rem;
+	background-color: transparent;
+	font-weight: bold;
+	color: var(--button-color);
+}
+.text-button:hover {
+	background-color: transparent;
+
+	color: var(--button-color-hover);
+}
+/* --------------------- CARD -------------------------- */
+.card {
+	border-radius: 1rem;
+	background-color: var(--card-color);
+	box-shadow: 0 0 0.2rem var(--border-color);
+	margin: 0.4rem;
+	padding: 20px;
+}
+.card:hover {
+	box-shadow: 0 0 0.5rem var(--border-color);
+}
+.card-sm {
+	width: 20rem;
+	min-height: 3rem;
+}
+.card-md {
+	width: 20rem;
+	min-height: 10rem;
+}
+.card-lg {
+	width: 50rem;
+	min-height: 13rem;
+}
+.white-background {
+	background-color: var(--text-color);
+}
+/* --------------------- chips-section ------------------------ */
+/* --------------------- drawer-section ---------------------  */
+/* --------------------- header-section ---------------------  */
+/* --------------------- badge-section ---------------------  */
+/* --------------------- snackbar-section ---------------------  */
+/* --------------------- dialogs-section ---------------------  */
+.dialog-card {
+	border-radius: 1rem;
+	background-color: var(--card-color);
+	box-shadow: 0 0 0.2rem var(--border-color);
+	margin: 0.4rem;
+	padding: 20px;
+
+	width: 20rem;
+	min-height: 3rem;
+}
+
+.dialog-container-opened {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+.dialog-header {
+	font-size: 2rem;
+}
+.dialog-body {
+	font-size: 1.5rem;
+}
+.dialog-body {
+	margin: 1rem 0;
+	font-size: 1rem;
+	word-wrap: break-word;
+}
+/* --------------------- tabs-section  ---------------------  */
