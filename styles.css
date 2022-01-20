@@ -154,7 +154,6 @@ button {
 }
 .text-button:hover {
 	background-color: transparent;
-
 	color: var(--button-color-hover);
 }
 /* --------------------- CARD -------------------------- */
@@ -180,8 +179,29 @@ button {
 	width: 50rem;
 	min-height: 13rem;
 }
-.white-background {
-	background-color: var(--text-color);
+.card-img {
+	object-fit: cover;
+	width: 6rem;
+	margin-right: 2rem;
+	height: min-content;
+	border-radius: 0.5rem;
+}
+.card-header {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 0.5rem 0 0 0;
+}
+.card-footer {
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 1rem 0 0 0;
+}
+.card-cta-icon {
+	margin: 0 1rem;
+	cursor: pointer;
+}
+.card-cta-icon:hover {
+	color: var(--border-color);
 }
 /* --------------------- chips-section ------------------------ */
 /* --------------------- drawer-section ---------------------  */
